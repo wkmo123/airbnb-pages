@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Loft luminoso con terraza en el centro de Madrid. Galería de fotos y reserva en Airbnb.">
+  <title>Loft Centro Madrid | Apartamento vacacional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a href="#inicio" class="site-name">Loft Centro</a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="#galeria">Galería</a>
+      <a href="#apartamento">El apartamento</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a href="#" class="btn btn-airbnb" data-airbnb>Reservar en Airbnb</a>
+    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" id="heroBg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="hero-label">Apartamento en Madrid</p>
+        <h1>Loft luminoso con terraza<br>en el centro histórico</h1>
+        <p class="hero-text">
+          Un espacio acogedor, moderno y silencioso para descubrir la ciudad.
+          Ideal para parejas o escapadas de fin de semana.
+        </p>
+        <div class="hero-actions">
+          <a href="#galeria" class="btn btn-outline">Ver fotos</a>
+          <a href="#" class="btn btn-airbnb" data-airbnb>Reservar en Airbnb</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <header class="section-header">
+          <h2>Galería</h2>
+          <p>Recorre cada rincón del apartamento. Haz clic en una foto para ampliarla.</p>
+        </header>
+        <div class="photo-grid" id="photoGrid" role="list"></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="apartamento">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>El apartamento</h2>
+          <p>
+            Loft de diseño con techos altos y luz natural durante todo el día.
+            Salón amplio, cocina totalmente equipada, dormitorio con cama queen
+            y terraza privada para desayunar al aire libre.
+          </p>
+          <p>
+            Situado en el corazón del centro histórico, a pocos minutos del metro,
+            museos, restaurantes y las zonas más animadas de Madrid.
+          </p>
+          <ul class="features-list">
+            <li>2 huéspedes</li>
+            <li>1 dormitorio</li>
+            <li>1 baño</li>
+            <li>Terraza privada</li>
+            <li>WiFi alta velocidad</li>
+            <li>Cocina equipada</li>
+            <li>Aire acondicionado</li>
+            <li>Check-in autónomo</li>
+          </ul>
+        </div>
+        <figure class="about-image">
+          <img src="" alt="Interior del loft" id="aboutImage" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section location-section" id="ubicacion">
+      <div class="container">
+        <header class="section-header">
+          <h2>Ubicación</h2>
+          <p>Centro histórico, Madrid, España</p>
+        </header>
+        <figure class="location-image">
+          <img src="" alt="Vista de Madrid" id="locationImage" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-box">
+        <h2>¿Te gusta lo que ves?</h2>
+        <p>Las reservas y el calendario de disponibilidad se gestionan en Airbnb.</p>
+        <a href="#" class="btn btn-airbnb btn-large" data-airbnb>Ir a Airbnb para reservar</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Loft Centro Madrid</p>
+      <p class="footer-note">Página informativa · Reservas en <a href="#" data-airbnb>Airbnb</a></p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de fotos">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+    <button type="button" class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">&#8249;</button>
+    <button type="button" class="lightbox-next" id="lightboxNext" aria-label="Siguiente">&#8250;</button>
+    <figure class="lightbox-figure">
+      <img src="" alt="" id="lightboxImg">
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
